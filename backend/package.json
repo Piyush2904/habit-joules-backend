@@ -1,0 +1,21 @@
+{
+  "name": "habit-joules-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "migrate": "node migrate.js"
+  },
+  "dependencies": {
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "react-router-dom": "^6.14.1",
+  "react-qr-reader": "2.2.1",
+  "react-qr-code": "^2.0.2",
+  "uuid": "^9.0.0"
+},
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
