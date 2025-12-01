@@ -1,0 +1,82 @@
+:root {
+  --bg: #f7f8fb;
+  --card: #fff;
+  --accent: #1e88e5;
+  --muted: #666;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: #111;
+}
+
+.app-header {
+  padding: 12px 20px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.app-main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(10,10,20,0.04);
+  margin-bottom: 16px;
+}
+
+.form input, .form select {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-secondary { background: #6c6cff; }
+.btn-ghost { background: #eee; color: #333; }
+.btn-small { padding: 6px 8px; font-size: .9rem; }
+
+.btn-row { display:flex; gap:10px; flex-wrap:wrap; margin-top:8px; }
+
+.meta { display:flex; gap:16px; margin-top:8px; }
+.missions { list-style:none; padding:0; }
+.missions li { display:flex; justify-content:space-between; gap:12px; padding:8px 0; border-bottom: 1px dashed #eee; }
+
+.profile-top { display:flex; gap:12px; align-items:center; }
+.avatar img { width:96px; height:96px; object-fit:cover; border-radius:12px; }
+.avatar-placeholder { width:96px; height:96px;background:#eee;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#999; }
+
+.barcode-modal {
+  position: fixed;
+  inset: 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(0,0,0,0.3);
+}
+
+.barcode-card { background:white; padding:20px; border-radius:12px; }
